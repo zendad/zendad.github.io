@@ -5,9 +5,9 @@
  }
 
 body{
- 	font-family: 'Gloria Hallelujah';
+ 	font-family: 'lato', sans-serif;
  	color: #747704;
- 	font-weight: 300;
+ 	font-weight: 400;
  	background-color: white;
  }
 
@@ -48,7 +48,9 @@ body{
 /*title super*/
 .title-super{
  	font-size: 60px;
- }
+ 	font-family: 'pinyon script', cursive;
+ 	color: #002b2e;
+}
 
 /*title logo*/
 .title-logo{
@@ -60,4 +62,10 @@ hr {
  	height: 3px;
  	width: 100%;
 	background-color: #bbb;
+}
+
+/*h4*/
+h4{
+	font-family: 'dancing script', cursive;
+	color: #008cb0;
 }
