@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     padding:0;
     margin:0;
@@ -217,3 +218,76 @@ span {
     display: block;
   }
 }
+=======
+/*body*/
+
+*{
+	/*outline: 1px solid red !important;*/
+ }
+
+body{
+ 	font-family: 'lato', sans-serif;
+ 	color: #747704;
+ 	font-weight: 400;
+ 	background-color: white;
+ }
+
+/*weather image*/
+.weather{
+ 	width: 1200px;
+ 	height: 360px;
+ }
+
+/*featured work images*/
+.images{
+ 	width: 400px;
+ 	height: 200px;
+ }
+
+/*modal images*/
+.mod-images{
+ 	width: 600px;
+ 	height: 300px;
+}
+
+/*logo*/
+.logo{
+ 	width: 100px;
+ 	height: 100px;
+ }
+
+/*text muted*/
+.text-muted{
+ 	color:#bcbbbb;
+ }
+
+/*text thin*/
+.text-thin{
+ 	font-weight: 100;
+ }
+
+/*title super*/
+.title-super{
+ 	font-size: 60px;
+ 	font-family: 'pinyon script', cursive;
+ 	color: #002b2e;
+}
+
+/*title logo*/
+.title-logo{
+ 	margin-top: 20px;
+ }
+
+/*hr*/
+hr {
+ 	height: 3px;
+ 	width: 100%;
+	background-color: #bbb;
+}
+
+/*h4*/
+h4{
+	font-family: 'dancing script', cursive;
+	color: #008cb0;
+}
+>>>>>>> 251578bb2bd7974452e30d5d5ed99d7a56248f60
