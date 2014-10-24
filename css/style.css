@@ -1,7 +1,7 @@
 *{
     padding:0;
     margin:0;
-    font-family: 'roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -15,7 +15,7 @@
 h1 {
 
   font-size: 40px;
-  color: #f5a623;
+  color: #F5A623;
   line-height: 48px;
   display: inline;
 }
@@ -38,7 +38,7 @@ h3 {
 h4 {
   font-style: bold;
   font-size: 14px;
-  color: #4a4a4a;
+  color: #4A4A4A;
   line-height: 17px;
 }
 
@@ -73,7 +73,7 @@ p {
 }
 
 a {
-  color: #1199c3;
+  color: #1199C3;
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -82,12 +82,12 @@ a {
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #f3f3f3;
+  color: #F3F3F3;
   line-height: 28px;
 }
 
-#skillsh3 {
-  color: #f5ae23;
+#skillsH3 {
+  color: #F5AE23;
   display: none;
 }
 
@@ -96,29 +96,29 @@ a {
 }
 
 .orange {
-  background-color: #f5ae23;
+  background-color: #F5AE23;
 }
 
 .orange-text {
-  color: #f5ae23;
+  color: #F5AE23;
 }
 
 .white-text {
   font-weight: bold;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 .gray {
-  background-color: #f3f3f3;
+  background-color: #F3F3F3;
   padding-bottom: 10px;
   clear:both;
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+  background-color: #4A4A4A;
 }
 
-/* todo: replace with image later */
+/* TODO: Replace with image later */
 #header {
   background-color: #484848;
 }
@@ -153,10 +153,10 @@ img {
 }
 
 
-/* bar chart stuff */
+/* Bar chart stuff */
 .chart div {
   font: 10px sans-serif;
-  background-color: #4a4a4a;
+  background-color: #4A4A4A;
   text-align: right;
   padding: 3px;
   margin: 1px;
@@ -169,12 +169,12 @@ span {
   padding: 5px;
 }
 
-#letsconnect {
+#letsConnect {
   text-align: center;
 }
 
 @media only screen and (max-width: 1024px) {
-  #letsconnect {
+  #letsConnect {
     margin-top: 5%;
   }
 }
@@ -186,7 +186,7 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
-  #letsconnect {
+  #letsConnect {
     margin-top: 10%;
   }
   .biopic {
@@ -204,14 +204,14 @@ span {
   margin-right: 5%;
 }
 
-#mapdiv {
+#mapDiv {
   height: 400px;
   width: 100%;
   padding-bottom: 5%;
 }
 
 @media only screen and (min-width: 750px) {
-  #skillsh3,
+  #skillsH3,
   #skills,
   .biopic {
     display: block;
