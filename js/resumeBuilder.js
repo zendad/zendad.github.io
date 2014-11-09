@@ -3,51 +3,57 @@
 // biography infomation
 var bio={
 	"name":"Dereck Zenda",
-	"role":"Web Developer",
+	"role":"Front-End Web Developer",
 	"contacts":{
-		"mobile":"0718776643",
-		"github":"zendad",
-		"twitter":"@danzenda",
-		"location":"Johannesburg",
-		"email":"dereck.zenda@gmail.com"
+		"skype":"skype:dereck_z?chat",
+		"email":"mailto:dereck.zenda@gmail.com?subject=Contact from Resume",
+		"linkedin":"https://www.linkedin.com/pub/dereck-zenda/a4/2a0/b01",
+		"github":"https://github.com/zendad",
+		"twitter":"https://twitter.com/intent/tweet?screen_name=@danzenda",
+		"location":"https://www.google.co.za/maps/place/70+Bram+Fischer+Dr,+Randburg,+2194/@-26.119577,27.99935,17z/data=!3m1!4b1!4m2!3m1!1s0x1e9574b4ec79e251:0x6d9b0eda7942bc9d"
 	},
-	"skills":["Programming","Java","Javascript","HTML"],
-	"welcomeMessage":"Welcome to my cv",
-	"biopic":"images/fry.jpg"
+	"skills":["Python","Java","Javascript","HTML","CSS"],
+	"biopic":"images/profile.jpg"
 };
 
 //education information
 var education={
 	"schools":[
 	{
-		"name":"Mbecity",
-		"location":"Harare",
-		"degree":"BA",
+		"name":"Harare Polytechnic",
+		"location":"Roodepoort,Johannesburg",
+		"degree":"ND",
 		"major":"Computer Science",
-		"dates":"2001-2003",
-		"url":"http://www.example.com"
+		"dates":"1999-2001",
+		"url":"http://www.hararepoly.com"
 	},
 	{
-		"name":"Mbare",
-		"location":"Masvingo",
-		"degree":"BA",
+		"name":"Masvingo Polytechnic",
+		"location":"Rivonia,Johannesburg",
+		"degree":"HND",
 		"major":"Computer Science",
-		"dates":"2003-2005",
-		"url":"http://www.example.com"
+		"dates":"2001-2003",
+		"url":"http://www.masvingopoly.com"
 	}
 	],
 	"onlineCourses":[
 		{
-		"name":"Orocity",
-		"onlinecourse":"Sugar Cane",
-		"dates":"2001-2003",
-		"url":"http://www.example.com"
+		"name":"Udacity",
+		"onlinecourse":"Front-End Web Developer Nanodegree",
+		"dates":"10/2014-01/2015",
+		"url":"https://www.udacity.com"
 	},
 	{
-		"name":"Maracity",
-		"onlinecourse":"Soda Power",
-		"dates":"2001-2003",
-		"url":"http://www.example.com"
+		"name":"Coursera",
+		"onlinecourse":"Mobile Cloud Computing with Android",
+		"dates":"03/2014-12/2014",
+		"url":"https://www.coursera.org"
+	},
+	{
+		"name":"Coursera",
+		"onlinecourse":"Data Science",
+		"dates":"03/2014-12/2014",
+		"url":"https://www.coursera.org"
 	}
 	]
 };
@@ -56,26 +62,26 @@ var education={
 var work={
 	"jobs":[
 	{
-		"employer":"Musorowegomo",
-		"location":"Harare",
-		"title":"Systems Administrator",
-		"dates":"2001-2003",
-		"url":"http://www.dereckzenda.com",
+		"employer":"Mula Systems Plc",
+		"location":"Lonehill,Johannesburg",
+		"title":"Systems Engineer",
+		"dates":"2010-Current",
+		"url":"http://www.mula.com",
 		"description":"who moved my cheese and puit in my congo.who moved my cheese and puit in my congo"
 	},
 	{
-		"employer":"Mombe Chingwa",
-		"location":"Cape Town",
+		"employer":"ABC Holdings",
+		"location":"Sandton,Johannesburg",
 		"title":"Systems Administrator",
-		"dates":"2001-2003",
+		"dates":"2004-2009",
 		"url":"http://www.mazanda.com",
-		"description":"who moved my cheese and puit in my congo.who moved my cheese and puit in my congo."
+		"description":"who moved my cheese and puit in my congo.who moved my cheese and puit in my congo"
 	},
 	{
-		"employer":"Sadza neNyama",
-		"location":"London",
-		"title":"Systems Administrator",
-		"dates":"2001-2003",
+		"employer":"Donbas Art Works",
+		"location":"Randburg,Johannesburg",
+		"title":"Linux Administrator",
+		"dates":"2000-2003",
 		"url":"http://www.mundawangu.com",
 		"description":"who moved my cheese and puit in my congo.who moved my cheese and puit in my congo"
 	}
@@ -86,17 +92,17 @@ var work={
 var projectsDone={
 	"workProjects":[
 	{
-		"title":"Udacity",
-		"dates":"2001-2003",
-		"url":"http://www.mundawangu.com",
-		"description":"sadza nemuriwo",
+		"title":"Zenda Portal",
+		"dates":"2005-2009",
+		"url":"http://www.zenda.com",
+		"description":"Front-End project -developing a front-web portal for Zenda Works",
 		"images":"images/project1.png"
 	},
 	{
-		"title":"Udacity",
-		"dates":"2001-2003",
+		"title":"Mandu Portal",
+		"dates":"2000-2004",
 		"url":"http://www.mundawangu.com",
-		"description":"chingwa chine dovi",
+		"description":"Front-End project - developing a front-web portal for Mandu website",
 		"images":"images/project2.png"
 	}
 	]
@@ -106,24 +112,23 @@ var projectsDone={
 function bioInfo(){
 	var formattedName = HTMLheaderName.replace('%data%', bio.name);
 	var formattedJob = HTMLheaderRole.replace('%data%', bio.role);
- 	var formattedPic = HTMLbioPic.replace('%data%', 'images/fry.jpg');
-	var formattedMessage = HTMLWelcomeMsg.replace('%data%', bio.welcomeMessage);
-	var formattedNumber = HTMLmobile.replace('%data%', bio.contacts.mobile);
-	var formattedEmail = HTMLemail.replace('%data%', bio.contacts.email);
-	var formattedTwitter = HTMLtwitter.replace('%data%', bio.contacts.twitter);
-	var formattedGithub = HTMLgithub.replace('%data%', bio.contacts.github);
-	var formattedLocation = HTMLlocation.replace('%data%',bio.contacts.location);
-	$('#header').prepend(formattedName, formattedJob);
-	$('#header').append(formattedPic, formattedMessage, HTMLskillsStart);
-	$('#topContacts').append(formattedNumber, formattedEmail, formattedTwitter, formattedGithub, formattedLocation);
-	$('#footerContacts').append(formattedNumber, formattedEmail, formattedTwitter, formattedGithub, formattedLocation);
+	var formattedSkype = HTMLskype.replace('%mylink%', bio.contacts.skype);
+	var formattedEmail = HTMLemail.replace('%mylink%', bio.contacts.email);
+	var formattedLinkedin = HTMLlinkedin.replace('%mylink%',bio.contacts.linkedin);
+	var formattedGithub = HTMLgithub.replace('%mylink%', bio.contacts.github);
+	var formattedTwitter = HTMLtwitter.replace('%mylink%', bio.contacts.twitter);
+	var formattedLocation = HTMLlocation.replace('%mylink%',bio.contacts.location);
+	var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
+	$('#mypic').prepend(formattedPic);
+	$('#myname').prepend(formattedName,formattedJob);
+	$('#myskills').append(HTMLskillsStart);
+	$('#topContacts').prepend(formattedSkype, formattedEmail, formattedLinkedin, formattedGithub, formattedTwitter, formattedLocation);
 	if(bio.skills.length>0){
 		for (skill in bio.skills){
 			var formattedSkill=HTMLskills.replace("%data%",bio.skills[skill]);
-			$("#skills").append(formattedSkill);
+			$("#myskills").append(formattedSkill);
 		}
 	}
-
 }
 
 //function to append work to #workExperience
@@ -175,33 +180,56 @@ function educationInfo(){
 		var onlineFormattedTitle=HTMLonlineTitle.replace("%data%",education.onlineCourses[course].onlinecourse);
 		var onlineFormattedCourse=HTMLonlineSchool.replace("%data%",education.onlineCourses[course].name);
 		var onlineFormattedTitle=onlineFormattedTitle.replace("%mylink%",education.onlineCourses[course].url);
-
 		var onlineFormattedCourseName=  onlineFormattedTitle+onlineFormattedCourse;
 		var onlineFormattedDates=HTMLonlineDates.replace("%data%",education.onlineCourses[course].dates);
-		var onlineFormattedUrl=HTMLonlineURL.replace("%data%",education.onlineCourses[course].url);
-		var onlineFormattedUrl=onlineFormattedUrl.replace("%mylink%",education.onlineCourses[course].url);
+		var onlineFormattedUrl=HTMLonlineURL.replace(education.onlineCourses[course].url);
 		$('.education-entry:last').append(onlineFormattedCourseName, onlineFormattedDates, onlineFormattedUrl);
 	}
 }
 
+//button to internationalize Name in bio
+function inName() {
+
+	var name_var = bio.name.trim().split(" ");
+	name_var[0] = name_var[0].slice(0,1).toUpperCase() + name_var[0].slice(1).toLowerCase();
+	name_var[1] = name_var[1].toUpperCase();
+
+	return name_var[0] + " " + name_var[1];
+}
+
+//Skills Chart
+function donutChat(){
+	google.setOnLoadCallback(drawChart);
+	function drawChart() {
+		var data = google.visualization.arrayToDataTable([
+          ['Skill', 'Skill Usage'],
+          ['Python',     11],
+          ['Java',      7],
+          ['Javascript',  9],
+          ['HTML', 10],
+          ['CSS',    7]
+        ]);
+
+        var options = {
+          title: 'Skills Usage in Projects',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+}
+
+
 //Call functions
 (function makeSite(){
 	$('#mapDiv').append(googleMap);	
+	donutChat();
+	$("#main").append(internationalizeButton);
 	bioInfo();
 	displayWork();
 	workProject();
 	educationInfo();
 	initializeMap();
+	inName(name);
 }());
-
-//create button to internationalize Name in bio
-$("#main").append(internationalizeButton);
-function inName(){
-	name=name.trim().split(" ");
-	name[1]=name[1].toUpperCase();
-	name[0]=name[0].slice(0,1).toUpperCase()+name[0].slice(1).toLowerCase();
-
-	return name[0]+" "+name[1];
-}
-
-

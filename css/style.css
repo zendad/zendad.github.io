@@ -1,36 +1,42 @@
 *{
-    padding:0;
-    margin:0;
-    font-family: 'Roboto', sans-serif;
+  padding:0;
+  margin:0;
+  font-family: 'roboto', sans-serif;
+  font-size: 14px;
 }
-
-
 
 .education-entry, .work-entry, .project-entry {
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
-
 
 h1 {
-
-  font-size: 40px;
-  color: #F5A623;
-  line-height: 48px;
+  font-size: 70px;
+  font-family: 'lato script', cursive;
+  color: #800080;
   display: inline;
+  word-spacing: 10px;
+  text-shadow: 4px 4px 8px blue;
 }
 
-h2 {
+.section-head {
+  font-family: 'dancing script', cursive;
   font-style: bold;
-  font-size: 24px;
-  color: #999999;
-  line-height: 29px;
-  padding: 10px;
+  font-size: 45px;
+  color: #808000;
+}
+
+.role-section {
+  font-family: 'lobster', cursive;
+  font-style: bold;
+  font-size: 35px;
+  color: #800080;
 }
 
 h3 {
-  font-style: italic;
-  font-size: 20px;
+  font-family: 'dancing script', cursive;
+  font-style: bold;
+  font-size: 30px;
   color: #000000;
   line-height: 22px;
 }
@@ -38,7 +44,7 @@ h3 {
 h4 {
   font-style: bold;
   font-size: 14px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   line-height: 17px;
 }
 
@@ -47,7 +53,6 @@ h2, h3, h4, h5 {
   padding-left: 5%;
   padding-right: 5%;
 }
-
 
 .date-text {
   font-style: italic;
@@ -67,60 +72,57 @@ h2, h3, h4, h5 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   color: #333333;
   line-height: 21px;
 }
 
 a {
-  color: #1199C3;
+  color: #1199c3;
   text-decoration: none;
   margin-top: 10px;
   display: block;
+  font-size: 20px;
 }
 
-.welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #F3F3F3;
-  line-height: 28px;
+#myskills {
+  padding: 3%;
 }
 
-#skillsH3 {
-  color: #F5AE23;
-  display: none;
-}
-
-#skills {
-  display: none;
+.myskill-text {
+  padding-left: 15%;
 }
 
 .orange {
-  background-color: #F5AE23;
+  background-color: #f5ae23;
 }
 
 .orange-text {
-  color: #F5AE23;
+  color: #f5ae23;
 }
 
 .white-text {
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .gray {
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   padding-bottom: 10px;
   clear:both;
 }
 
 .dark-gray {
-  background-color: #4A4A4A;
+  background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #6b8e23;
+}
+
+#details {
+  background-color: #6b8e23;
+  padding: 1%;
 }
 
 .flex-box {
@@ -133,13 +135,12 @@ a {
 }
 
 .center-content {
-  padding: 5%;
+  padding: 10%;
 }
 
 ul {
   list-style-type: none;
 }
-
 
 .biopic {
   float: left;
@@ -149,34 +150,12 @@ ul {
 }
 
 img {
-  padding: 10px;
-}
-
-
-/* Bar chart stuff */
-.chart div {
-  font: 10px sans-serif;
-  background-color: #4A4A4A;
-  text-align: right;
-  padding: 3px;
-  margin: 1px;
-  height: 12px;
-  color: white;
-  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 span {
   padding: 5px;
-}
-
-#letsConnect {
-  text-align: center;
-}
-
-@media only screen and (max-width: 1024px) {
-  #letsConnect {
-    margin-top: 5%;
-  }
 }
 
 @media only screen and (max-width:900px) {
@@ -186,14 +165,8 @@ span {
 }
 
 @media only screen and (max-width: 750px) {
-  #letsConnect {
-    margin-top: 10%;
-  }
   .biopic {
     width: 150px;
-  }
-  .welcome-message {
-    display: none;
   }
 }
 
@@ -207,13 +180,138 @@ span {
 #mapDiv {
   height: 400px;
   width: 100%;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
 }
 
 @media only screen and (min-width: 750px) {
-  #skillsH3,
+  #skillsh3,
   #skills,
   .biopic {
     display: block;
   }
+}
+
+.social-icons {
+  overflow: auto;
+  margin: 0 0.5%;
+}
+
+.social-icons li {
+  float: left;
+  position: relative;
+  width: 9%;
+  height: 0;
+  margin: 1% 0.5%;
+  padding-bottom: 5%;
+}
+
+.social-icons:last-of-type {
+  margin-right: 0;
+}
+
+.social-icon a {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 70%;
+  height: 70%;
+  border: 0;
+  background-color: #fff;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-decoration: none;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  -moz-border-radius: 10%;
+  -webkit-border-radius: 10%;
+  border-radius: 10%;
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -webkit-transform: translatez(0);
+  transform: translatez(0);
+}
+
+.social-icon a:hover {
+  background-color: #222;
+  background-size: 0%;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.social-icon a:hover .social-name {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  filter: progid:dximagetransform.microsoft.alpha(enabled=false);
+  opacity: 1;
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+
+.social-name {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin-top: -7px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  filter: progid:dximagetransform.microsoft.alpha(opacity=0);
+  opacity: 0;
+  -webkit-filter: blur(25px);
+  filter: blur(25px);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -webkit-transform: translatez(0);
+  transform: translatez(0);
+}
+
+.icon-call a {
+  background-color: #3b5998;
+  background-image: url("../images/call.png");
+}
+
+.icon-skype a {
+  background-color: #00aced;
+  background-image: url("../images/skype.png");
+}
+
+.icon-email a {
+  background-color: #00aced;
+  background-image: url("../images/email.png");
+}
+
+.icon-linkedin a {
+  background-color: #007fb1;
+  background-image: url("../images/linkedin.png");
+}
+
+.icon-github a {
+  background-color: #4183c4;
+  background-image: url("../images/github.png");
+}
+
+.icon-blog a {
+  background-color: #f60;
+  background-image: url("../images/blog.png");
+}
+
+.icon-twitter a {
+  background-color: #00aced;
+  background-image: url("../images/twitter.png");
+}
+
+.icon-location a {
+  background-color: #5c3d2e;
+  background-image: url("../images/location.jpg");
 }
