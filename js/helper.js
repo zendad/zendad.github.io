@@ -23,7 +23,7 @@ var HTMLlinkedin ="<li class='social-icon icon-linkedin'><a href='%mylink%'><spa
 var HTMLgithub ="<li class='social-icon icon-github'><a href='%mylink%'><span class='social-name'>github</span></a></li>"
 var HTMLblog ="<li class='social-icon icon-blog'><a href='%mylink%'><span class='social-name'>blog</span></a></li>"
 var HTMLtwitter ="<li class='social-icon icon-twitter'><a href='%mylink%'><span class='social-name'>twitter</span></a></li>"
-var HTMLlocation ="<li class='social-icon icon-location'><a href='%mylink%'><span class='social-name'>my location</span></a></li>"
+var HTMLlocation ="<li class='social-icon icon-location'><a href='%mylink%'><span class='social-name'>location</span></a></li>"
 
 var HTMLbioPic = "<img src='%data%' class='biopic img-responsive'>";
 
